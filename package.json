@@ -1,17 +1,17 @@
 {
-  "name": "generator-meshblu-connector",
-  "version": "5.0.0",
-  "description": "Generate a meshblu connector",
+  "name": "generator-nanocyte-node",
+  "version": "0.0.1",
+  "description": "Generate a nanocyte node",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "octoblu/generator-meshblu-connector",
+  "repository": "octoblu/generator-nanocyte-node",
   "author": {
-    "name": "Jade Meskill",
-    "email": "jade.meskill@gmail.com",
-    "url": "https://github.com/iamruinous"
+    "name": "Octoblu, Inc.",
+    "email": "serveradmin@octoblu.com",
+    "url": "https://github.com/sqrtofsaturn/generator-nanocyte-node"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.10.x"
   },
   "scripts": {
     "test": "exit 0"
