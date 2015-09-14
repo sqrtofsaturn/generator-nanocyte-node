@@ -1,4 +1,4 @@
-# generator-meshblu-connector [![Build Status](https://secure.travis-ci.org/iamruinous/generator-meshblu-connector.png?branch=master)](https://travis-ci.org/iamruinous/generator-meshblu-connector)
+# generator-nanocyte-node
 
 > [Yeoman](http://yeoman.io) generator
 
@@ -26,13 +26,13 @@ Yeoman travels light. He didn't pack any generators when he moved in. You can th
 To install generator-meshblu-connector from npm, run:
 
 ```bash
-npm install -g generator-meshblu-connector
+npm install -g generator-nanocyte-node
 ```
 
 Finally, initiate the generator:
 
-```bash
-yo meshblu-connector
+```
+yo nanocyte-node --coffee
 ```
 
 ### Getting To Know Yeoman
