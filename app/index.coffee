@@ -21,7 +21,7 @@ NanocyteNodeGenerator = yeoman.generators.Base.extend
     },{
       type: 'input'
       name: 'nanocyteName'
-      message: 'What is the name of your node?'
+      message: 'What is the name of your Nanocyte node?'
       default : _.kebabCase @appname
     }];
 
@@ -29,7 +29,6 @@ NanocyteNodeGenerator = yeoman.generators.Base.extend
       @nanocyteName = 'nanocyte-node-' + props.nanocyteName
       @className = _.capitalize(props.nanocyteName) + 'Node'
       @nodeSrc = props.nanocyteName + '-node'
-      @folderName = props.nanocyteName + '/'
       done()
 
   configuring:
@@ -43,9 +42,9 @@ NanocyteNodeGenerator = yeoman.generators.Base.extend
         @template '_index.coffee.js', 'index.js'
         @template 'src/node.coffee', 'src/' + @nodeSrc + '.coffee'
         @template 'test/test_template.coffee', 'test/' + @nodeSrc + '-spec.coffee'
-        @template 'test/mocha.opts', 'test/mocha.opts'
-        @template 'test/test_helper.coffee', 'test/test_helper.coffee'
-        @template 'examples/sample-node.coffee', 'examples/sample-node.coffee'
+        @copy 'test/mocha.opts', 'test/mocha.opts'
+        @copy 'test/test_helper.coffee', 'test/test_helper.coffee'
+        @copy 'examples/sample-node.coffee', 'examples/sample-node.coffee'
 #        @copy '_gitignore_coffee', '.gitignore'
       else
         @template '_package.json', 'package.json'
